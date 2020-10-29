@@ -32,35 +32,19 @@ function CartCheckout() {
                 <div className="col-75">
                     <div className="container">
                         <form action="/action_page.php">
-
                             <div className="row">
                                 <div className="col-50">
                                     <h3>Billing Address</h3>
                                     <label for="fname"><i className="fa fa-user"></i> Full Name</label>
-                                    <input type="text" id="fname" name="firstname" placeholder="John M. Doe" />
+                                    <input type="text" id="fname" name="firstname" placeholder="Nguyễn Văn A" />
                                     <label for="email"><i className="fa fa-envelope"></i> Email</label>
-                                    <input type="text" id="email" name="email" placeholder="john@example.com" />
+                                    <input type="text" id="email" name="email" placeholder="abc@example.com" />
                                     <label for="adr"><i className="fa fa-address-card-o"></i> Address</label>
-                                    <input type="text" id="adr" name="address" placeholder="542 W. 15th Street" />
+                                    <input type="text" id="adr" name="address" placeholder="Phường Linh Trung, quận Thủ Đức" />
                                     <label for="city"><i className="fa fa-institution"></i> City</label>
-                                    <input type="text" id="city" name="city" placeholder="New York" />
-
-                                    <div className="row">
-                                        <div className="col-50">
-                                            <label for="state">State</label>
-                                            <input type="text" id="state" name="state" placeholder="NY" />
-                                        </div>
-                                        <div className="col-50">
-                                            <label for="zip">Zip</label>
-                                            <input type="text" id="zip" name="zip" placeholder="10001" />
-                                        </div>
-                                    </div>
+                                    <input type="text" id="city" name="city" placeholder="Hồ Chí Minh" />
                                 </div>
                             </div>
-                            <label>
-                                <input type="checkbox" checked="checked" name="sameadr" /> Shipping address same as billing
-                            </label>
-                            <input type="submit" value="Continue to checkout" className="btn" />
                         </form>
                     </div>
                 </div>
@@ -73,7 +57,7 @@ function CartCheckout() {
                         </h4>
                         {cartProduct.map(item => (
                             <div key={item.id}>
-                                <img src={item.imageURL} style={{ width: "30%" }}></img>
+                                <img alt="#" src={item.imageURL} style={{ width: "30%" }} />
                                 <p><a href=" #">{item.title}</a> <span className="price">${item.price}</span>x {item.count}</p>
                             </div>
                         ))}

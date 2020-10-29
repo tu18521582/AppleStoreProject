@@ -15,13 +15,12 @@ function Header(props) {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link><Link to="/">Home</Link></Nav.Link>
-                        <Nav.Link><Link to="/products">Products</Link></Nav.Link>
-                        <Nav.Link><Link to="/about">About</Link></Nav.Link>
+                        <Nav.Link as={Link} to="/">Home</Nav.Link>
+                        <Nav.Link as={Link} to="/products">Product</Nav.Link>
+                        <Nav.Link>About</Nav.Link>
                     </Nav>
                     <Form inline>
-                        {/* <Button variant="outline-success">Search</Button> */}
-                        <Button variant="warning"><Link to="/cart" style={{ textDecoration: 'none' }} ><i class="fa fa-shopping-cart" aria-hidden="true"></i></Link></Button>
+                        <Link to="/cart" style={{ textDecoration: 'none' }} ><i className="fa fa-shopping-cart fa-3x" aria-hidden="true"></i></Link>
                     </Form>
                 </Navbar.Collapse>
             </Navbar>

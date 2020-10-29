@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import ControlledCarousel from './components/Carousel/ControlledCarousel';
+import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Success from "./components/Success/Success";
 import Cart from "./features/Cart/components/Cart";
@@ -9,9 +10,6 @@ import ProductList from './features/Products/components/ProductList';
 function App() {
     return (
         <div className="App">
-            {/* <Header />
-            <ControlledCarousel />
-            <ProductList /> */}
             <Router>
                 <Header />
                 <Switch>
@@ -21,6 +19,7 @@ function App() {
                     <Route path="/cart/checkout" component={CartCheckout} />
                     <Route path="/success" component={Success} />
                 </Switch>
+                <Footer />
             </Router>
         </div>
     );

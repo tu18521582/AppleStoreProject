@@ -43,7 +43,7 @@ function Cart(props) {
                                         <p className="title center">{cart.title}</p>
                                         <br></br>
                                         <div style={{ color: "red" }}>${cart.price}</div>
-                                        <div>Quantity: {cart.count}</div>
+                                        <div> Quantity: {cart.count}</div>
                                     </div>
                                 </td>
                             </tr>
