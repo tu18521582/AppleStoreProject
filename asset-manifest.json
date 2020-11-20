@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/AppleStoreProject/static/css/main.2904b36b.chunk.css",
+    "main.js": "/AppleStoreProject/static/js/main.e09fb153.chunk.js",
+    "main.js.map": "/AppleStoreProject/static/js/main.e09fb153.chunk.js.map",
+    "runtime-main.js": "/AppleStoreProject/static/js/runtime-main.4bd4befe.js",
+    "runtime-main.js.map": "/AppleStoreProject/static/js/runtime-main.4bd4befe.js.map",
+    "static/css/2.20aa2d7b.chunk.css": "/AppleStoreProject/static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.162ac199.chunk.js": "/AppleStoreProject/static/js/2.162ac199.chunk.js",
+    "static/js/2.162ac199.chunk.js.map": "/AppleStoreProject/static/js/2.162ac199.chunk.js.map",
+    "static/js/3.a1b878fb.chunk.js": "/AppleStoreProject/static/js/3.a1b878fb.chunk.js",
+    "static/js/3.a1b878fb.chunk.js.map": "/AppleStoreProject/static/js/3.a1b878fb.chunk.js.map",
+    "index.html": "/AppleStoreProject/index.html",
+    "static/css/2.20aa2d7b.chunk.css.map": "/AppleStoreProject/static/css/2.20aa2d7b.chunk.css.map",
+    "static/css/main.2904b36b.chunk.css.map": "/AppleStoreProject/static/css/main.2904b36b.chunk.css.map",
+    "static/js/2.162ac199.chunk.js.LICENSE.txt": "/AppleStoreProject/static/js/2.162ac199.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4bd4befe.js",
+    "static/css/2.20aa2d7b.chunk.css",
+    "static/js/2.162ac199.chunk.js",
+    "static/css/main.2904b36b.chunk.css",
+    "static/js/main.e09fb153.chunk.js"
+  ]
+}
