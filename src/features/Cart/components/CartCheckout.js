@@ -52,7 +52,7 @@ function CartCheckout() {
                     <div className="container">
                         <h4>Cart
                             <span className="price">
-                                <i className="fa fa-shopping-cart"></i>
+
                             </span>
                         </h4>
                         {cartProduct.map(item => (

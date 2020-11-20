@@ -38,7 +38,7 @@ const productSlice = createSlice({
         {
             id: 5,
             title: 'Iphone 11 Pro Black',
-            description: "The iPhone 11 Pro is a more advanced smartphone than the base iPhone 11, but it isn't the best iPhone just because its price is a big step up too.",
+            description: "The iPhone 11 Pro is a more advanced smartphone than the base iPhone 11, but it isn't the best iPhone just because its price is a big step up too.The chief reason you may want to buy this abababaabab.",
             price: 999,
             inventory: 1,
             imageURL: 'https://9to5mac.com/wp-content/uploads/sites/6/2019/11/iPhone-11-Pro-Review-Feature-Image.jpg?quality=82&strip=all'

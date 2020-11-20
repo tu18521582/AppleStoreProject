@@ -25,37 +25,42 @@ function Cart(props) {
     return (
         <>
             <div>
-                <h1>Shopping Cart</h1>
                 <hr></hr>
-                <h2>My cart</h2>
+                <h2 className="my-cart">My cart</h2>
                 <hr></hr>
-                {cartList.length === 0 ? <p>Vui long chon san pham</p> : <><Table striped bordered hover size="sm">
-                    <tbody>
-                        {cartList.map((cart, index) => (
-                            <tr key={index}>
-                                <td>
-                                    <div>
-                                        <Card style={{ width: '8rem' }}><Card.Img variant="top" src={cart.imageURL} /></Card>
-                                    </div>
-                                </td>
-                                <td>
-                                    <div className="inline">
-                                        <p className="title center">{cart.title}</p>
-                                        <br></br>
-                                        <div style={{ color: "red" }}>${cart.price}</div>
-                                        <div> Quantity: {cart.count}</div>
-                                    </div>
-                                </td>
+                {cartList.length === 0 ?
+                    <>
+                        <p className="noti-remind">Vui lòng chọn sản phẩm</p><Link to="/products" style={{ textDecoration: 'none' }} className="abc"><h3 className="back-to-product">Xem sản phẩm<i className="fa fa-hand-o-left" aria-hidden="true"></i></h3></Link>
+
+                    </>
+                    :
+                    <><Table striped bordered hover size="sm" style={{ width: '100%' }}>
+                        <tbody>
+                            {cartList.map((cart, index) => (
+                                <tr key={index}>
+                                    <td>
+                                        <div>
+                                            <Card style={{ width: '8rem' }}><Card.Img variant="top" src={cart.imageURL} /></Card>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div className="inline">
+                                            <p className="title center">{cart.title}</p>
+                                            <br></br>
+                                            <div style={{ color: "red" }}>${cart.price}</div>
+                                            <div> Quantity: {cart.count}</div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            ))}
+                            <tr>
+                                <td>Total</td>
+                                <td>${total}</td>
                             </tr>
-                        ))}
-                        <tr>
-                            <td>Total</td>
-                            <td>${total}</td>
-                        </tr>
-                    </tbody>
-                </Table>
-                    <Button variant="outline-success"><Link to="/cart/checkout" style={{ textDecoration: 'none' }}>Check out</Link></Button>
-                </>}
+                        </tbody>
+                    </Table>
+                        <Button variant="outline-success"><Link to="/cart/checkout" style={{ textDecoration: 'none' }}>Check out</Link></Button>
+                    </>}
             </div>
         </>
     );

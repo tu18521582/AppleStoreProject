@@ -1,11 +1,147 @@
 h1 { 
-    color: #d54d7b; 
-    font-family: "Great Vibes",cursive; 
-    font-size: 165px; 
-    line-height: 160px; 
-    font-weight: normal;
-    margin-bottom: 0px;
-    margin-top: 40px; 
-    text-align: center;
-    text-shadow: 0 1px 1px #fff; 
+    font-size: 1.5rem !important;
+    color: #666 !important;
+    letter-spacing: 2px;
+}    
+
+h1:hover {
+    opacity: 0.4;
+    transition: opacity 0.2s ease
+}
+.fa {
+    margin-left: 1rem;
+}
+
+.cart-icon {
+    color :rgba(0,0,0,1);
+}
+
+.cart-icon:hover {
+    opacity: 0.3;
+    transition: opacity 0.2s ease
+}
+
+/* #basic-navbar-nav {
+    display: flex;
+    justify-content: space-between;
+} */
+
+.badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+}
+  
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #lblCartCount {
+      font-size: 12px;
+      background: #ff0000;
+      color: #fff;
+      padding: 0 5px;
+      vertical-align: top;
+      margin-left: -10px; 
+  }
+
+  .display-flex {
+      display: flex;
+  }
+
+
+.nav-link {
+    font-size: 20px;
+}
+
+.fa-shopping-cart {
+    font-size: 30px;
+}
+
+.form-control {
+    margin: 0px !important;
+}
+
+.form-inline {
+    margin-bottom: 8px;
+}
+
+.btn {
+    margin: 0px !important;
+}
+
+.cart-inline {
+
+}
+
+/* .navbar {
+    display: block !important;
+} */
+
+
+@media only screen and (min-width: 1024px) {
+    .cart-tablet {
+        display: none;
+    }
+}
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+    .form-inline {
+        display: none !important;
+    }
+
+    .row {
+        display: inline-block !important;
+        width: 100%;
+    }
+    
+    .float-cart {
+        float: right;
+        bottom: 50px;
+    }
+
+    .cart-in-nav {
+        display: none !important;
+    }
+
+    .cart-tablet {
+        float: right;
+        margin-top: 54px;
+    }
+
+    .display-contents {
+        display: contents;
+    }
+}
+
+/* Mobile: width < 740px */
+@media only screen and (max-width: 740px) {
+    .form-inline {
+        display: none !important;
+    }
+
+    .row {
+        display: inline-block !important;
+        width: 100%;
+    }
+    
+    .float-cart {
+        float: right;
+        bottom: 50px;
+    }
+
+    .cart-in-nav {
+        display: none !important;
+    }
+
+    .cart-tablet {
+        float: right;
+        margin-top: 54px;
+    }
+
+    .display-contents {
+        display: contents;
+    }
 }

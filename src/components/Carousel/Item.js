@@ -8,6 +8,6 @@ export default styled.div`
   width: 100%;
   background-color: white;
   color: #fff;
-  margin: 0 15px;
+  margin: 0;
   font-size: 4em;
 `;

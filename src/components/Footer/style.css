@@ -1,6 +1,8 @@
 .site-footer
 {
-  background-color:#bbb;
+    border: none;
+  margin-top: 50px;
+  background-color:white;
   padding:45px 0 20px;
   font-size:15px;
   line-height:24px;
@@ -17,7 +19,7 @@
 }
 .site-footer h6
 {
-  color:blue;
+  color: #666;
   font-size:16px;
   text-transform:uppercase;
   margin-top:5px;
@@ -114,12 +116,12 @@
   color:#818a91;
   font-size:16px;
   display:inline-block;
-  line-height:44px;
-  width:44px;
-  height:44px;
+  line-height:44px !important;
+  width:44px !important;
+  height:44px !important;
   text-align:center;
-  margin-right:8px;
-  border-radius:100%;
+  margin-right:8px !important;
+  border-radius:100% !important;
   -webkit-transition:all .2s linear;
   -o-transition:all .2s linear;
   transition:all .2s linear
@@ -152,6 +154,10 @@
 {
   background-color:#ea4c89
 }
+
+.fa {
+  margin-left: 0rem !important;
+}
 @media (max-width:767px)
 {
   .social-icons li.title
@@ -159,5 +165,32 @@
     display:block;
     margin-right:0;
     font-weight:600
+  }
+}
+
+span {
+    font-weight: bold;
+}
+
+.h1-footer:hover {
+  opacity : 1;
+}
+
+/* Tablet: width >= 740px and width < 1024px */
+@media only screen and (min-width: 740px) and (max-width: 1023px) {
+  .footer-links {
+    width: 200px;
+  }
+
+  .site-footer {
+    display: flex;
+  }
+
+  .social-icons {
+    display: flex;
+  }
+
+  .email-phone {
+    width: 250px;
   }
 }
